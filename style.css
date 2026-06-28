@@ -1,0 +1,174 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f4f4f4;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+
+/* Header */
+
+header{
+
+    background:#1f3c88;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+header img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+
+header h1{
+
+    font-size:40px;
+
+}
+
+header p{
+
+    font-size:20px;
+
+}
+
+
+/* Sections */
+
+section{
+
+    background:white;
+
+    width:80%;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+
+/* Heading */
+
+h2{
+
+    color:#1f3c88;
+
+    margin-bottom:15px;
+
+}
+
+
+/* Table */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table,th,td{
+
+    border:1px solid gray;
+
+}
+
+th{
+
+    background:#1f3c88;
+
+    color:white;
+
+}
+
+th,td{
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+
+/* Skills */
+
+ul{
+
+    margin-left:25px;
+
+}
+
+li{
+
+    padding:6px;
+
+}
+
+
+/* Project */
+
+.project{
+
+    background:#f9f9f9;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border-left:5px solid #1f3c88;
+
+}
+
+
+/* Footer */
+
+footer{
+
+    background:#1f3c88;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
