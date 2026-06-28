@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 /* Reset */
 
 *{
@@ -19,7 +22,64 @@ body{
     line-height:1.6;
 
 }
+/* Navigation */
 
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 80px;
+
+    background:#0d47a1;
+
+}
+
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+nav ul li a:hover{
+
+    color:yellow;
+
+}
 
 /* Header */
 
@@ -64,8 +124,6 @@ header p{
     font-size:20px;
 
 }
-
-
 /* Sections */
 
 section{
