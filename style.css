@@ -230,3 +230,99 @@ footer{
     padding:20px;
 
 }
+
+
+
+/* ==========================================================================
+   1. DESKTOP STYLES (എല്ലാ വലിയ സ്ക്രീനുകൾക്കും വേണ്ടിയുള്ളത്)
+   ========================================================================== */
+nav {
+  display: flex;
+  justify-content: space-between; /* ലോഗോ ഇടതുവശത്തും മെനു വലതുവശത്തും വരാൻ */
+  align-items: center;
+  background-color: #333; 
+  padding: 15px 30px;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* വലിയ സ്ക്രീനിൽ ലിങ്കുകൾ വരിവരിയായി കാണിക്കും */
+nav ul.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.nav-links li {
+  margin: 0;
+}
+
+nav ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: block;
+}
+
+/* ഡെസ്ക്ടോപ്പിൽ മൊബൈൽ ബട്ടണും ചെക്ക്ബോക്സും കാണിക്കില്ല */
+#click-toggle, .menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* ==========================================================================
+   2. RESPONSIVE STYLES (ടാബ്‌ലറ്റ്, മൊബൈൽ സ്ക്രീനുകൾക്ക് വേണ്ടി)
+   ========================================================================== */
+@media (max-width: 768px) {
+  
+  nav {
+    flex-direction: row-reverse; /* മൊബൈലിൽ ബട്ടൺ വലത്തും ലോഗോ ഇടത്തും വരാൻ */
+  }
+  
+  .menu-toggle {
+    display: block; /* മൊബൈലിൽ മാത്രം 3-bar ബട്ടൺ കാണിക്കും */
+  }
+
+  /* നമ്മൾ നേരത്തെ സെറ്റ് ചെയ്ത മൊബൈൽ മെനു ഡിസൈൻ */
+  nav ul.nav-links {
+    display: none; /* ആദ്യമേ ലിങ്കുകൾ ഒളിപ്പിച്ചു വെക്കുന്നു */
+    flex-direction: column;
+    width: 150px;         
+    position: absolute;
+    top: 54px;            
+    left: 0;              
+    background-color: #333;
+    text-align: left;    
+    padding: 0;           
+    z-index: 100;
+  }
+
+  nav ul.nav-links li {
+    margin: 0;            
+  }
+
+  nav ul.nav-links li a {
+    padding: 3px 15px;    
+    font-size: 15px;      
+  }
+
+  /* ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുമ്പോൾ (Checkbox checked ആകുമ്പോൾ) മെനു കാണിക്കും */
+  #click-toggle:checked ~ ul.nav-links {
+    display: flex;
+  }
+}
